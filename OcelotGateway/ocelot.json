@@ -1,0 +1,19 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5001/"
+  },
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/gateway/weather1",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/weatherforecast",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 8000
+        }
+      ]
+    }
+  ]
+}

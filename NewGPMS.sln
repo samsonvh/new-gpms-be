@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcelotGateway", "OcelotGateway\OcelotGateway.csproj", "{092BE0E7-2F3C-48C6-91B8-B858979AC5FF}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E6AF509F-CBA6-4101-84B0-F25C1569FD58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{FC94358A-BA3F-47D2-98B7-85D9EE651659}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccountService", "AccountService", "{4BBD933F-C947-4F02-B9D5-B42252694052}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountService.API", "Microservices\AccountService\AccountService.API\AccountService.API.csproj", "{3FC852EE-47C9-496A-BFA4-6D045ABB93B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthenticateService", "AuthenticateService", "{DF69747D-AEB3-4361-A9A5-51BFF63F1FD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticateService.API", "Microservices\AuthenticateService\AuthenticateService.API\AuthenticateService.API.csproj", "{7685CFA1-7052-401D-8B0E-E258DC834A4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountService.Domain", "Microservices\AccountService\AccountService.Domain\AccountService.Domain.csproj", "{381B8FCA-85CD-4EC5-9E11-F3DFDD7BDAD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountService.Infrastructure.SQLServer", "Microservices\AccountService\AccountService.Infrastructure\AccountService.Infrastructure.SQLServer.csproj", "{6BC44E92-F070-4811-A6F5-B06E90462DF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountService.Application", "Microservices\AccountService\AccountService.Application\AccountService.Application.csproj", "{F8C7C9E2-87CD-4D72-AC67-22A385105B5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountService.Infrastructure.MongoDB", "Microservices\AccountService\AccountService.Infrastructure.MongoDB\AccountService.Infrastructure.MongoDB.csproj", "{214A3DBB-8AAB-4520-A00F-A0D32746D10B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{092BE0E7-2F3C-48C6-91B8-B858979AC5FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092BE0E7-2F3C-48C6-91B8-B858979AC5FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092BE0E7-2F3C-48C6-91B8-B858979AC5FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092BE0E7-2F3C-48C6-91B8-B858979AC5FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6AF509F-CBA6-4101-84B0-F25C1569FD58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6AF509F-CBA6-4101-84B0-F25C1569FD58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6AF509F-CBA6-4101-84B0-F25C1569FD58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6AF509F-CBA6-4101-84B0-F25C1569FD58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FC852EE-47C9-496A-BFA4-6D045ABB93B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FC852EE-47C9-496A-BFA4-6D045ABB93B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FC852EE-47C9-496A-BFA4-6D045ABB93B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FC852EE-47C9-496A-BFA4-6D045ABB93B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7685CFA1-7052-401D-8B0E-E258DC834A4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7685CFA1-7052-401D-8B0E-E258DC834A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7685CFA1-7052-401D-8B0E-E258DC834A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7685CFA1-7052-401D-8B0E-E258DC834A4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{381B8FCA-85CD-4EC5-9E11-F3DFDD7BDAD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{381B8FCA-85CD-4EC5-9E11-F3DFDD7BDAD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{381B8FCA-85CD-4EC5-9E11-F3DFDD7BDAD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{381B8FCA-85CD-4EC5-9E11-F3DFDD7BDAD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BC44E92-F070-4811-A6F5-B06E90462DF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BC44E92-F070-4811-A6F5-B06E90462DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BC44E92-F070-4811-A6F5-B06E90462DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BC44E92-F070-4811-A6F5-B06E90462DF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8C7C9E2-87CD-4D72-AC67-22A385105B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8C7C9E2-87CD-4D72-AC67-22A385105B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8C7C9E2-87CD-4D72-AC67-22A385105B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8C7C9E2-87CD-4D72-AC67-22A385105B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{214A3DBB-8AAB-4520-A00F-A0D32746D10B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{214A3DBB-8AAB-4520-A00F-A0D32746D10B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{214A3DBB-8AAB-4520-A00F-A0D32746D10B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{214A3DBB-8AAB-4520-A00F-A0D32746D10B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4BBD933F-C947-4F02-B9D5-B42252694052} = {FC94358A-BA3F-47D2-98B7-85D9EE651659}
+		{3FC852EE-47C9-496A-BFA4-6D045ABB93B9} = {4BBD933F-C947-4F02-B9D5-B42252694052}
+		{DF69747D-AEB3-4361-A9A5-51BFF63F1FD0} = {FC94358A-BA3F-47D2-98B7-85D9EE651659}
+		{7685CFA1-7052-401D-8B0E-E258DC834A4E} = {DF69747D-AEB3-4361-A9A5-51BFF63F1FD0}
+		{381B8FCA-85CD-4EC5-9E11-F3DFDD7BDAD2} = {4BBD933F-C947-4F02-B9D5-B42252694052}
+		{6BC44E92-F070-4811-A6F5-B06E90462DF9} = {4BBD933F-C947-4F02-B9D5-B42252694052}
+		{F8C7C9E2-87CD-4D72-AC67-22A385105B5D} = {4BBD933F-C947-4F02-B9D5-B42252694052}
+		{214A3DBB-8AAB-4520-A00F-A0D32746D10B} = {4BBD933F-C947-4F02-B9D5-B42252694052}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C48E41C-DF89-449A-B069-959BA4322350}
+	EndGlobalSection
+EndGlobal

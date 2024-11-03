@@ -1,0 +1,18 @@
+services:
+  ocelotgateway:
+    image: ${DOCKER_REGISTRY-}ocelotgateway
+    build:
+      context: .
+      dockerfile: OcelotGateway/Dockerfile
+    ports:
+      - "5000:8080"
+      - "5001:8081"
+
+  weather1:
+    image: ${DOCKER_REGISTRY-}weather1
+    build:
+      context: .
+      dockerfile: Weather1/Dockerfile
+    ports:
+      - "8000:8080"
+
